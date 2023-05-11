@@ -7,19 +7,24 @@ XL	≥1200 pixel
 XXL	≥1400 pixel */
 
 /* MOBILE FIRST */
-@media screen and (max-width:576px){
-    .card, .card.c-big{
-        width:100%
-    }
-}
-
-@media screen and (min-width: 768px){
-    .card{
+@media screen and (min-width: 576px){
+    .row.cards-3 .card{
         width: calc((100% / 3) - (var(--gap-card)));
     }
 
-    .card.c-big{
+    .row.cards-3 .card.c-big{
         width: calc(((100% / 3) * 2 ) - (var(--gap-card)));
     }
-        
+
+    .row.cards-2 .card{
+        width: calc((100% / 2) - (var(--gap-card)));
+    }
+
+    .row.cards-1 .card{
+        width: 100%;
+    }        
+}
+
+@media screen and (min-width:992px) {
+    
 }

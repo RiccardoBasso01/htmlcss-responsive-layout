@@ -98,6 +98,10 @@ header{
     gap: var(--gap-card);
 }
 
+.card, .card.c-big{
+    width:100%
+}
+
 .card{
     height: 300px;
     background-color: var(--grigio-1);
