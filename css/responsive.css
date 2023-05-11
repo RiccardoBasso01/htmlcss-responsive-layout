@@ -1,0 +1,25 @@
+/* 
+XS	<576 pixel
+S	≥576 pixel
+M	≥768px
+L	≥992 pixel
+XL	≥1200 pixel
+XXL	≥1400 pixel */
+
+/* MOBILE FIRST */
+@media screen and (max-width:576px){
+    .card, .card.c-big{
+        width:100%
+    }
+}
+
+@media screen and (min-width: 768px){
+    .card{
+        width: calc((100% / 3) - (var(--gap-card)));
+    }
+
+    .card.c-big{
+        width: calc(((100% / 3) * 2 ) - (var(--gap-card)));
+    }
+        
+}
