@@ -7,24 +7,37 @@ XL	≥1200 pixel
 XXL	≥1400 pixel */
 
 /* MOBILE FIRST */
+/* "TABLET SITE"  */
 @media screen and (min-width: 576px){
-    .row.cards-3 .card{
+    /* wc33= width card 33% */
+    .site-tablet-wc33 .card{
         width: calc((100% / 3) - (var(--gap-card)));
     }
 
-    .row.cards-3 .card.c-big{
+    .site-tablet-wc33 .card.c-big{
         width: calc(((100% / 3) * 2 ) - (var(--gap-card)));
     }
 
-    .row.cards-2 .card{
+    /* wc50= width card 50% */
+    .site-tablet-wc50 .card, .wc50 .card{
         width: calc((100% / 2) - (var(--gap-card)));
     }
 
-    .row.cards-1 .card{
+    /* wc100= width card 100% */
+    .site-tablet-wc100 .card{
         width: 100%;
     }        
 }
 
-@media screen and (min-width:992px) {
-    
+/* "DESKTOP SITE"  */
+@media screen and (min-width:768px) {
+    /* wc50= width card 50% */
+    .site-desktop-wc50 .card{
+        width: calc((100% / 2) - (var(--gap-card)));
+    }
+
+    /* wc33= width card 33% */
+    .site-desktop-wc33 .card{
+        width: calc((100% / 3) - (var(--gap-card)));
+    }
 }
